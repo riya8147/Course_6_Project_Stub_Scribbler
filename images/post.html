@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/post.css">
+    <script defer src="/images/scripts/common.js"></script>
+    <script defer src="scripts/post.js"></script>
+    <title>Individual Post</title>
+</head>
+
+<body>
+<!-- Header (Include the code for the header) -->
+<header>
+    <!-- Include header content here -->
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Post Title -->
+    <h1 id="postTitle">Post Title</h1>
+
+    <!-- Post Author -->
+    <p id="postAuthor">Author Name</p>
+
+    <!-- Edit Button -->
+    <button id="editButton" onclick="toggleEdit()">Edit <i class="fas fa-edit"></i></button>
+
+    <!-- Post Text (Editable) -->
+    <div id="postText" contenteditable="false">
+        <!-- Post text goes here -->
+    </div>
+
+    <!-- Like Button and Like Count -->
+    <button id="likeButton" onclick="toggleLike()">Like <i class="fas fa-thumbs-up"></i></button>
+    <p id="likeCount">Be the first one to like this!</p>
+
+    <!-- Comment Section -->
+    <div id="commentSection">
+        <input type="text" id="commentInput" placeholder="Leave a comment...">
+        <button id="commentButton" onclick="addComment()">Comment</button>
+        <div id="allComments">
+            <!-- Comment items go here -->
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

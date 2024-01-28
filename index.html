@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriBBler</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <img src = "images/background.jpg/" >
+</head>
+<body>
+<div class="bg"></div>
+<!-- Header -->
+<header>
+    <div id="logo">
+        <img src="logo.jpg" alt="ScriBBler">
+    </div>
+    <div id="subheading">
+        <h2>Explore, Imagine, Create</h2>
+    </div>
+    <div id="buttons">
+        <button id="signupBtn">Sign Up</button>
+        <button id="signingBtn">Sign In</button>
+    </div>
+</header>
+
+<!-- Buttons Section -->
+<main>
+    <section id="buttonsSection">
+        <button id="allPostsBtn">All Posts</button>
+        <button id="createPostBtn">Create Post</button>
+    </section>
+</main>
+
+<!-- Modals -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signupModal')">&times;</span>
+        <h2 class="modal-title">Get Started</h2>
+        <form id="signupForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+
+            <p id="signupErrorMessage" class="error-message"></p>
+
+            <button type="button" id="signupSubmitBtn">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="signinModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signingModal')">&times;</span>
+        <h2 class="modal-title">Welcome Back!</h2>
+        <form id="signingForm">
+            <label for="signingUsername">Username</label>
+            <input type="text" id="signingUsername" placeholder="Enter your username">
+
+            <label for="signingPassword">Password</label>
+            <input type="password" id="signingPassword" placeholder="Enter your password">
+
+            <p id="signingErrorMessage" class="error-message"></p>
+
+            <button type="button" id="signingSubmitBtn">Sign In</button>
+        </form>
+        <p>Not a member? <a href="#" onclick="openModal('signupModal')">Sign Up</a></p>
+    </div>
+</div>
+
+<div id="createPostModal" class="modal">
+    <!-- Create Post Modal Content -->
+    <!-- ... -->
+</div>
+
+<script src="/scripts/common.js"></script>
+<script src="/scripts/index.js"></script>
+</body>
+</html>

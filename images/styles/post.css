@@ -1,0 +1,79 @@
+/* Import common styles */
+@import url('common.css');
+
+/* Additional styles for post page */
+body {
+    background-color: #ffeedd;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#postTitle {
+    text-align: center;
+    /* Add styles for post title */
+}
+
+#postAuthor {
+    margin-left: 10px;
+    /* Add styles for post author */
+}
+
+#editButton {
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+    cursor: pointer;
+    /* Add styles for edit button */
+}
+
+#postText {
+    margin-top: 20px;
+    border: 1px solid transparent;
+    padding: 10px;
+    /* Add styles for post text */
+}
+
+#likeButton {
+    margin-top: 20px;
+    cursor: pointer;
+    /* Add styles for like button */
+}
+
+#likeCount {
+    margin-top: 10px;
+    /* Add styles for like count */
+}
+
+#commentSection {
+    margin-top: 20px;
+    /* Add styles for comment section */
+}
+
+#commentInput {
+    width: 70%;
+    padding: 10px;
+    /* Add styles for comment input */
+}
+
+#commentButton {
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    /* Add styles for comment button */
+}
+
+#allComments {
+    margin-top: 20px;
+    /* Add styles for all comments */
+}
+
+.commentItem {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Add styles for individual comment item */
+}
